@@ -3,4 +3,4 @@ from battery.battery import Battery
 class SpindlerBattery(Battery):
     def __init__(self, last_service_date):
         self.yearly_service_frequency = 2
-        super.__init__(last_service_date, self.yearly_service_frequency)
+        super().__init__(last_service_date, self.yearly_service_frequency)

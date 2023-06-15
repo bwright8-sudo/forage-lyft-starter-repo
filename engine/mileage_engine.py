@@ -8,4 +8,4 @@ class MileageEngine(Engine, ABC):
         self.mileage_service_frequency = mileage_service_frequency
 
     def needs_service(self):
-        return (self.current_mileage - self.last_service_mileage) > self.mileage_service_frequency
+        return (self.current_mileage - self.last_service_mileage) >= self.mileage_service_frequency

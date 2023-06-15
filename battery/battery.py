@@ -8,4 +8,4 @@ class Battery(ABC):
         self.yearly_service_frequency = yearly_service_frequency
 
     def needs_service(self):
-        return self.last_service_date.replace(year=self.last_service_date.year + self.yearly_service_frequency) < self.current_date
+        return self.last_service_date.replace(year=self.last_service_date.year + self.yearly_service_frequency) <= self.current_date
